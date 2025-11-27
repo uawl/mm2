@@ -30,12 +30,19 @@ function App() {
     return `all good`;
   });
   
-  return <>
-    <h1>Hello!</h1>
-    <textarea value={s} onInput={(t) => { s.value = (t.target as HTMLTextAreaElement).value; }}></textarea>
-    <br />
-    <pre>{t}</pre>
-  </>;
+  return <div style={{
+    display: "flex",
+    flexDirection: "column"
+  }}>
+    <textarea style={{
+      width: "100%",
+      height: "50dvh",
+      resize: "none"
+    }} value={s} onInput={(t) => { s.value = (t.target as HTMLTextAreaElement).value; }}></textarea>
+    <pre style={{
+      width: "100%"
+    }}>{t}</pre>
+  </div>;
 }
 
 render(<App />, document.body);
