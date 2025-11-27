@@ -1,0 +1,17 @@
+{
+  "name": "mm2",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.5.1",
+    "immutable": "^5.1.4",
+    "preact": "^10.27.2"
+  }
+}
